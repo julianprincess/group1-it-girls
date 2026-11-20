@@ -345,7 +345,7 @@ function makePresetButtons() {
 // =====================================================
 let game = null;           // filled in by startGame()
 let currentScreen = "title";
-let clock =;             // total seconds, used for bobbing animation
+let clock = 0;             // total seconds, used for bobbing animation
 let bestScore = 0;
 
 const gameCanvas = document.getElementById("game-canvas");

@@ -515,7 +515,7 @@ function tapLine(position) {
     updateHud();
     return;
   }
- 
+   callNext();
 }
 
 // The player pressed a cake button

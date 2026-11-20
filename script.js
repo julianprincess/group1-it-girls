@@ -464,7 +464,7 @@ function addToLine(spec) {
   if (spec === null) spec = randomCustomerSpec();
   game.line.push(makeCustomer(spec.kind, spec.orders, spec.displayName));
   if (game.line.length === 1 && game.atCounter === null) startPatience(game.line[0].waitTime);
-  
+  return true;
 }
 
 // Start the patience timer. People get less patient as the shift goes on.

@@ -1,0 +1,23 @@
+  body { margin: 0; background: #ffeef3; color: #5b3a33; font-family: "Trebuchet MS", sans-serif; }
+  .screen { display: none; flex-direction: column; align-items: center; gap: 12px; padding: 16px; max-width: 850px; margin: 0 auto; }
+  .screen.show { display: flex; }
+  h1 { font-size: 60px; margin: 0; color: #ff8fb1; text-shadow: 3px 3px 0 #5b3a33; }
+  button { font-family: inherit; color: #5b3a33; cursor: pointer; }
+  .big { font-size: 24px; font-weight: bold; padding: 12px 44px; border: 3px solid #5b3a33; border-radius: 999px; background: #ff8fb1; color: white; }
+  .choice { border: 3px solid #5b3a33; background: #fffaf1; border-radius: 999px; padding: 6px 12px; font-size: 15px; }
+  .choice.picked { background: #ff8fb1; color: white; }
+  .swatch { width: 34px; height: 34px; border-radius: 50%; padding: 0; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+  #preview, #game-canvas { border: 3px solid #5b3a33; border-radius: 20px; background: #ffe4ec; max-width: 100%; }
+  #game-canvas { width: 100%; max-width: 800px; height: auto; }
+  #hud { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-weight: bold; font-size: 18px; }
+  #message { min-height: 26px; font-weight: bold; color: #e0558a; text-align: center; margin: 0; }
+  #coach { background: #fffaf1; border: 3px solid #5b3a33; border-radius: 16px; padding: 10px; width: 100%; box-sizing: border-box; }
+  #line { display: flex; gap: 8px; overflow-x: auto; min-height: 140px; width: 100%; max-width: 800px; }
+  .customer-card { border: 3px solid #c9a99f; background: #fffaf1; border-radius: 14px; padding: 4px; font-size: 13px; font-weight: bold; text-align: center; }
+  .customer-card.first { border-color: #ff8fb1; box-shadow: 0 0 0 3px #ff8fb1; }
+  .bar { width: 72px; height: 7px; background: #ddd; border-radius: 5px; overflow: hidden; margin: 2px auto; }
+  .bar div { height: 100%; width: 100%; background: #1b998b; }
+  #cake-buttons { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+  .cake-button { background: #fffaf1; border: 3px solid #5b3a33; border-radius: 16px; padding: 4px; font-weight: bold; }
+  .glow { box-shadow: 0 0 0 5px #ff8fb1; }

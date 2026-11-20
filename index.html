@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sweet Nook (Simple Version)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SCREEN 1: title -->
+<div id="title-screen" class="screen show">
+  <h1>Sweet Nook</h1>
+  <p>Serve cakes before your customers lose patience!</p>
+  <button id="play-button" class="big">Play</button>
+</div>
+
+<!-- SCREEN 2: choose your baker -->
+<div id="pick-screen" class="screen">
+  <h2>Pick your baker</h2>
+  <canvas id="preview" width="220" height="250"></canvas>
+  <div>Quick pick: <span id="preset-buttons"></span></div>
+  <div class="row"><button id="girl-button" class="choice picked">Girl</button><button id="boy-button" class="choice">Boy</button></div>
+  <div>Skin <span id="skin-buttons"></span></div>
+  <div>Hair style <span id="style-buttons"></span></div>
+  <div>Hair color <span id="hair-buttons"></span></div>
+  <div>Outfit <span id="outfit-buttons"></span></div>
+  <button id="start-button" class="big">Start baking</button>
+</div>
+
+<!-- SCREEN 3: the game -->
+<div id="game-screen" class="screen">
+  <div id="hid">
+    <span id="hud-lives"></span>
+    <span>Served: <span id="hud-served"></span></span>
+    <span>Score: <span id="hud-score"
+    <span>Level: <span id="hud-level"></span></span>
+    <span>Combo: <span id="hud-combo"></span></span>
+    <span>Time: <span id="hud-time"></span></span>
+  </div>
+  <p id="message"
+  <div id="coach"><span id="coach-text"></span> <button id="coach-button">Next</button> <button id="skip-button">Skip tutorial</button></div>
+  <canvas id="game-canvas" width="800" height="460"></canvas>
+  <b>The line (first come, first served)</b>
+  <div id="line"></div>
+  <button id="call-button" class="big">Call next (Space)</button>
+  <div id="cake-buttons"></div>
+</div>
+
+<!-- SCREEN 4: game over -->
+<div id="over-screen" class="screen">
+  <h2 id="over-title"></h2>
+  <p>Score: <b id="over-score"></b> | Served: <b id="over-served"></b> | Best: <b id="over-best"></b></p>
+  <button id="again-button" class="big">Play again</button>
+  <button id="shop-button" class="big">Accessory shop 💎</button>
+  <button id="change-button" class="choice">Change baker</button>
+</div>
+
+<!-- SCREEN 5: accessory shop -->
+<div id="shop-screen" class="screen">
+  <h2>Accessory shop ✨</h2>
+  <p>Gems: <b id="shop-gems">0</b> 💎</p>
+  <p>Buy an accessory and it will appear on your baker!</p>
+  <div id="shop-items" class="row"></div>
+  <button id="shop-back" class="big">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

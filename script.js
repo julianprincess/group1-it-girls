@@ -262,7 +262,7 @@ function drawPerson(ctx, x, feetY, size, look, mood, time) {
     drawTriangle(ctx, 24, -90, 34, -96, 34, -84, "#ff8fb1");
     drawTriangle(ctx, 24, -90, 14, -96, 14, -84, "#ff8fb1");
   }
-  
+  ctx.restore();
 }
 
 // =====================================================

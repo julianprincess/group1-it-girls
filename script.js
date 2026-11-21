@@ -132,7 +132,7 @@ function drawCake(ctx, x, y, size, cakeIndex) {
     drawOval(ctx, 0, -63, 11, 11, cake.topping, true);
     drawOval(ctx, 0, -63, 8, 8, "#fff6a8", false);
   }
- 
+ ctx.restore();
 }
 
 // Draw a chibi person. (x, feetY) is where their feet are.

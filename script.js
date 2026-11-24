@@ -474,10 +474,10 @@ function shiftProgress() {
 }
 function startPatience(seconds) {
   game.patience = 0;
-  game.patienceMax = seconds * (1 - 0.5 * shiftProgress())
+  game.patienceMax = seconds * (1 - 0.5 * shiftProgress());
 }
 function patienceLeft() {                               // 1 = full, 0 = out of patience
-  return Math.max(0, 1 - game.patience / game.patienceMax)
+  return Math.max(0, 1 - game.patience / game.patienceMax);
 }
 function startPatienceForFront() {
   if (game.line.length > 0) { startPatience(game.line[0].waitTime); }

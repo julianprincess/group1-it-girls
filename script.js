@@ -542,7 +542,7 @@ function serveCake(cakeIndex) {
     game.patience = game.patience + 1.5;   // they get grumpier
     soundBad();
     say("Wrong cake! -3 points. " + pickRandom(wrongTaunts));
-   
+    updateHud();
     return;
   }
 
